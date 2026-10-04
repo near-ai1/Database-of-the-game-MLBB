@@ -3,18 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#141927">
     <title>MLBB Hero Database</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Mobile Legends: Bang Bang</h1>
-        <p>Полная база персонажей, сборок и контрпиков</p>
+        <div class="site-settings" aria-label="Настройки сайта" data-i18n-aria-label="siteSettings">
+            <label for="language-select" data-i18n="language">Язык</label>
+            <select id="language-select" class="filter-select">
+                <option value="ru">Русский</option>
+                <option value="en">English</option>
+                <option value="uz">O‘zbekcha</option>
+            </select>
+            <label for="theme-select" data-i18n="theme">Тема</label>
+            <select id="theme-select" class="filter-select">
+                <option value="dark" data-i18n="themeDark">Тёмная</option>
+                <option value="light" data-i18n="themeLight">Светлая</option>
+                <option value="ocean" data-i18n="themeOcean">Океан</option>
+            </select>
+        </div>
+        <h1 data-i18n="title">Mobile Legends: Bang Bang</h1>
+        <p data-i18n="subtitle">База персонажей, сборок и контрпиков</p>
     </header>
 
-    <main id="hero-container" class="hero-grid">
-        </main>
+    <p id="site-status" class="site-status" role="status" aria-live="polite"></p>
 
-    <script src="script.js"></script>
+    <section id="filter-panel" class="filter-panel" aria-label="Поиск и фильтры"
+        data-i18n-aria-label="filtersLabel">
+        <div class="filter-controls">
+            <div class="filter-field search-field">
+                <label for="hero-search" data-i18n="search">Поиск</label>
+                <input id="hero-search" class="search-input" type="search"
+                    data-i18n-placeholder="searchPlaceholder" placeholder="Имя, роль, линия, предмет..."
+                    autocomplete="off">
+            </div>
+            <div class="filter-field">
+                <label for="role-filter" data-i18n="role">Роль</label>
+                <select id="role-filter" class="filter-select"></select>
+            </div>
+            <div class="filter-field">
+                <label for="difficulty-filter" data-i18n="difficulty">Сложность</label>
+                <select id="difficulty-filter" class="filter-select"></select>
+            </div>
+            <div class="filter-field">
+                <label for="type-filter" data-i18n="damageType">Тип урона</label>
+                <select id="type-filter" class="filter-select"></select>
+            </div>
+            <div class="filter-field">
+                <label for="position-filter" data-i18n="lane">Линия</label>
+                <select id="position-filter" class="filter-select"></select>
+            </div>
+            <div class="filter-field">
+                <label for="sort-order" data-i18n="sort">Сортировка</label>
+                <select id="sort-order" class="filter-select">
+                    <option value="default" data-i18n="sortDefault">По умолчанию</option>
+                    <option value="name-asc" data-i18n="sortAsc">По имени: А—Я</option>
+                    <option value="name-desc" data-i18n="sortDesc">По имени: Я—А</option>
+                    <option value="difficulty" data-i18n="sortDifficulty">По сложности</option>
+                </select>
+            </div>
+            <button id="reset-filters" class="secondary-btn reset-btn" type="button" data-i18n="reset">Сбросить</button>
+        </div>
+        <p id="result-count" class="result-count" aria-live="polite"></p>
+    </section>
+
+    <main id="hero-container" class="hero-grid" aria-label="Персонажи"
+        data-i18n-aria-label="heroesLabel"></main>
 </body>
 </html>
