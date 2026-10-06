@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-width: 320px;
+    overflow-x: hidden;
+}
+
+header {
+    padding: 96px 16px 24px;
+}
+
+header h1 {
+    font-size: clamp(1.45rem, 7vw, 1.8rem);
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    overflow-wrap: anywhere;
+}
+
+header > p {
+    font-size: 0.95rem;
+}
+
+.site-settings {
+    top: 10px;
+    right: 12px;
+    left: 12px;
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto minmax(0, 1fr);
+    gap: 6px;
+}
+
+.site-settings label {
+    align-self: center;
+    font-size: 0.8rem;
+    text-align: left;
+}
+
+.site-settings .filter-select {
+    width: 100%;
+    min-width: 0;
+    min-height: 42px;
+    margin: 0;
+    padding: 6px 8px;
+    font-size: 0.85rem;
+}
+
+.game-picker,
+.workspace {
+    width: calc(100% - 24px);
+}
+
+.game-picker {
+    gap: 12px;
+    margin-bottom: 16px;
+    padding: 14px;
+}
+
+.game-picker-copy {
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.game-picker-mark {
+    width: 36px;
+    height: 36px;
+}
+
+.game-picker-copy p {
+    font-size: 0.82rem;
+}
+
+.game-select {
+    width: 100%;
+    min-height: 44px;
+    font-size: 0.95rem;
+}
+
+.workspace {
+    gap: 14px;
+    margin-bottom: 28px;
+}
+
+.section-sidebar {
+    gap: 9px;
+    padding: 12px;
+}
+
+.section-nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+}
+
+.section-link {
+    min-height: 58px;
+    justify-content: center;
+    gap: 7px;
+    padding: 8px 6px;
+    font-size: 0.84rem;
+    text-align: center;
+}
+
+.section-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.view-heading {
+    margin-bottom: 14px;
+    padding: 2px;
+}
+
+.view-heading h2 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+
+.view-heading p {
+    font-size: 0.92rem;
+}
+
+.filter-panel {
+    position: static;
+    width: 100%;
+    max-height: none;
+    margin-bottom: 16px;
+    padding: 14px;
+    overflow: visible;
+}
+
+.filter-controls {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
+}
+
+.filter-field {
+    width: 100%;
+    min-width: 0;
+}
+
+.filter-panel .search-input,
+.filter-panel .filter-select,
+.filter-panel .secondary-btn {
+    width: 100%;
+    max-width: none;
+    min-height: 44px;
+    margin: 0;
+    font-size: 16px;
+}
+
+.filter-panel .search-input,
+.filter-panel .filter-select {
+    padding: 9px 11px;
+}
+
+.filter-panel .result-count {
+    line-height: 1.4;
+}
+
+.hero-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+    width: 100%;
+    max-width: none;
+    margin-bottom: 28px;
+    padding: 10px;
+}
+
+.hero-card {
+    padding: 14px;
+}
+
+.hero-stats summary {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+}
+
+.stats-row {
+    grid-template-columns: minmax(0, 1fr) repeat(2, minmax(42px, 0.6fr));
+    gap: 5px;
+    padding: 6px;
+    font-size: 0.78rem;
+}
+
+.guide-view {
+    padding: 14px;
+}
+
+.guide-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+}
+
+.guide-card {
+    padding: 16px;
+}
+
+.guide-card ul {
+    padding-left: 18px;
+    font-size: 0.92rem;
+}
+
+.guide-card li {
+    overflow-wrap: anywhere;
+}
+
+.section-link:hover,
+.guide-card:hover {
+    transform: none;
+}
