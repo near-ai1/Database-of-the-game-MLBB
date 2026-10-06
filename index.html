@@ -39,7 +39,10 @@
                 <p data-i18n="gamePickerHint">Каталоги игр можно добавлять отдельно.</p>
             </div>
         </div>
-        <select id="game-select" class="game-select" aria-labelledby="game-select-label"></select>
+        <div class="game-select-wrap">
+            <span id="game-logo" class="game-logo" data-game="mlbb" aria-hidden="true">MLBB</span>
+            <select id="game-select" class="game-select" aria-labelledby="game-select-label"></select>
+        </div>
     </section>
 
     <div class="workspace">
@@ -55,6 +58,11 @@
                     aria-controls="guide-view" aria-pressed="false">
                     <span class="section-icon guide-icon" aria-hidden="true">02</span>
                     <span data-i18n="winningGuide">Как играть и побеждать</span>
+                </button>
+                <button class="section-link" type="button" data-view="graphics-view"
+                    aria-controls="graphics-view" aria-pressed="false">
+                    <span class="section-icon graphics-icon" aria-hidden="true">03</span>
+                    <span data-i18n="graphicsSettings">Настройки графики</span>
                 </button>
             </nav>
             <p class="sidebar-note" data-i18n="sidebarNote">Выберите раздел, чтобы начать.</p>
@@ -196,7 +204,42 @@
                 </div>
                 <p class="guide-disclaimer" data-i18n="guideDisclaimer">Советы общие: адаптируйте их к составам команд и обновлениям игры.</p>
             </section>
+
+            <section id="graphics-view" class="content-view graphics-view" aria-labelledby="graphics-view-title" hidden>
+                <div class="view-heading graphics-view-heading">
+                    <span class="view-eyebrow" data-i18n="deviceOptimization">НАСТРОЙКА УСТРОЙСТВА</span>
+                    <h2 id="graphics-view-title" data-i18n="graphicsSettings">Настройки графики</h2>
+                    <p data-i18n="graphicsIntro">Выберите устройство и приоритет — качество картинки или плавность игры.</p>
+                </div>
+                <form id="graphics-settings-form" class="graphics-settings">
+                    <div class="graphics-field">
+                        <label for="device-filter" data-i18n="deviceType">Тип устройства</label>
+                        <select id="device-filter" class="filter-select">
+                            <option value="phone" data-i18n="devicePhone">Телефон / планшет</option>
+                            <option value="pc" data-i18n="devicePc">ПК</option>
+                            <option value="laptop" data-i18n="deviceLaptop">Ноутбук</option>
+                            <option value="xbox" data-i18n="deviceXbox">Xbox</option>
+                            <option value="playstation" data-i18n="devicePlaystation">PlayStation</option>
+                        </select>
+                    </div>
+                    <div class="graphics-field">
+                        <label for="graphics-profile" data-i18n="playPriority">Приоритет</label>
+                        <select id="graphics-profile" class="filter-select">
+                            <option value="quality" data-i18n="profileQuality">Максимальная графика</option>
+                            <option value="performance" data-i18n="profilePerformance">Плавность и комфорт</option>
+                        </select>
+                    </div>
+                    <button class="graphics-action" type="submit" data-i18n="showDeviceSettings">Показать рекомендации</button>
+                    <button id="show-all-device-settings" class="graphics-action graphics-action-secondary" type="button"
+                        data-i18n="showAllDeviceSettings">Показать настройки для всех устройств</button>
+                </form>
+                <p class="graphics-notice" data-i18n="graphicsNotice">Сайт не может проверить мощность устройства. Максимальную графику выбирайте, только если игра работает стабильно, устройство не перегревается и FPS не падает.</p>
+                <div id="graphics-results" class="graphics-results" aria-live="polite"></div>
+            </section>
         </main>
     </div>
+    <footer class="site-footer">
+        <p data-i18n="legalNotice">Все товарные знаки, логотипы и изображения персонажей принадлежат их законным владельцам. Данный сайт является некоммерческим справочным ресурсом, созданным фанатами в образовательных и информационных целях.</p>
+    </footer>
 </body>
 </html>

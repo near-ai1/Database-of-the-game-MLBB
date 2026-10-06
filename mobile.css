@@ -74,9 +74,15 @@ header > p {
 }
 
 .game-select {
-    width: 100%;
+    flex: 1 1 auto;
+    width: auto;
+    min-width: 0;
     min-height: 44px;
     font-size: 0.95rem;
+}
+
+.game-select-wrap {
+    width: 100%;
 }
 
 .workspace {

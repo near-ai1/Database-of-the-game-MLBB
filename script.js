@@ -2,11 +2,42 @@ const LANGUAGES = {
   ru: {
     language: 'Язык', theme: 'Тема', themeDark: 'Тёмная', themeLight: 'Светлая', themeOcean: 'Океан',
     siteSettings: 'Настройки сайта', filtersLabel: 'Поиск и фильтры', heroesLabel: 'Персонажи',
-    pageTitle: 'База героев MLBB',
+    pageTitle: 'База героев MLBB', databaseTitleSuffix: 'База персонажей',
     title: 'Mobile Legends: Bang Bang',
     subtitle: 'Добро пожаловать в архив игр: здесь можно учиться играть и смотреть характеристики всех героев.',
-    chooseGame: 'Выберите игру', gamePickerHint: 'Каталоги игр можно добавлять отдельно.',
-    gameMlbb: 'Mobile Legends: Bang Bang', sectionsLabel: 'Разделы сайта', sections: 'Разделы',
+    chooseGame: 'Выберите игру', gamePickerHint: 'Полная база MLBB доступна сейчас; остальные игры будем добавлять по очереди.',
+    gameMlbb: 'Mobile Legends: Bang Bang', gameDota: 'Dota 2', gameGenshin: 'Genshin Impact',
+    gameZzz: 'Zenless Zone Zero', gameCatalogComingSoon: 'Каталог этой игры появится позже. Сейчас доступна база Mobile Legends: Bang Bang.',
+    legalNotice: 'Все товарные знаки, логотипы и изображения персонажей принадлежат их законным владельцам. Данный сайт является некоммерческим справочным ресурсом, созданным фанатами в образовательных и информационных целях.',
+    sectionsLabel: 'Разделы сайта', sections: 'Разделы',
+    graphicsSettings: 'Настройки графики', deviceOptimization: 'НАСТРОЙКА УСТРОЙСТВА',
+    graphicsIntro: 'Выберите устройство и приоритет — качество картинки или плавность игры.',
+    deviceType: 'Тип устройства', devicePhone: 'Телефон / планшет', devicePc: 'ПК',
+    deviceLaptop: 'Ноутбук', deviceXbox: 'Xbox', devicePlaystation: 'PlayStation',
+    playPriority: 'Приоритет', profileQuality: 'Максимальная графика',
+    profilePerformance: 'Плавность и комфорт', showDeviceSettings: 'Показать рекомендации',
+    showAllDeviceSettings: 'Показать настройки для всех устройств',
+    graphicsNotice: 'Сайт не может проверить мощность устройства. Максимальную графику выбирайте, только если игра работает стабильно, устройство не перегревается и FPS не падает.',
+    graphicsCardTitle: 'Рекомендуемые настройки', graphicsQualityLabel: 'Качество графики',
+    graphicsFrameRateLabel: 'Частота кадров', graphicsResolutionLabel: 'Разрешение',
+    graphicsEffectsLabel: 'Эффекты', graphicsShadowsLabel: 'Тени',
+    graphicsHigh: 'Высокое — если устройство справляется', graphicsBalanced: 'Среднее',
+    graphicsLow: 'Низкое', graphicsNativeResolution: 'Родное разрешение устройства',
+    graphicsReduceResolution: 'Снизить на один шаг при просадках',
+    graphicsMaxStableFps: 'Максимальное стабильное значение в игре',
+    graphics60Fps: '60 FPS (или ближайший доступный лимит)',
+    graphicsRecommendedEffects: 'Включены; снизить при перегреве',
+    graphicsReducedEffects: 'Пониженные для стабильности',
+    graphicsEnabledShadows: 'Включены, если нет просадок',
+    graphicsReducedShadows: 'Низкие или выключены',
+    graphicsPhoneTip: 'Закройте фоновые приложения, отключите режим энергосбережения во время игры и оставьте свободное место для охлаждения.',
+    graphicsPcTip: 'При игре на ПК через Android-эмулятор начните с одного экземпляра, проверьте стабильность и подберите разрешение под экран.',
+    graphicsLaptopTip: 'Играйте от сети на твёрдой поверхности, включите производительный режим питания и следите за температурой.',
+    graphicsConsoleUnavailable: 'Mobile Legends: Bang Bang не имеет официальной версии для этой консоли. Эти настройки не добавят поддержку игры.',
+    graphicsQualityDescription: 'Поднимайте качество по одному пункту и проверяйте стабильность в матче; откатите последний шаг, если появились нагрев или просадки.',
+    graphicsPerformanceDescription: 'Снизьте эффекты и тени, если FPS нестабилен или устройство нагревается. Приоритет — стабильная игра и комфорт.',
+    graphicsAllDevicesLabel: 'Профиль для всех устройств',
+    graphicsConsoleBadge: 'Игра не поддерживается официально',
     characteristics: 'Характеристики', winningGuide: 'Как играть и побеждать',
     sidebarNote: 'Выберите раздел, чтобы начать.', gameDatabase: 'БАЗА ИГРЫ',
     characteristicsIntro: 'Сравнивайте героев, боевые показатели и рекомендуемые сборки.',
@@ -91,11 +122,42 @@ const LANGUAGES = {
   en: {
     language: 'Language', theme: 'Theme', themeDark: 'Dark', themeLight: 'Light', themeOcean: 'Ocean',
     siteSettings: 'Site settings', filtersLabel: 'Search and filters', heroesLabel: 'Heroes',
-    pageTitle: 'MLBB Hero Database',
+    pageTitle: 'MLBB Hero Database', databaseTitleSuffix: 'Character Database',
     title: 'Mobile Legends: Bang Bang',
     subtitle: 'Welcome to archive of games where you can learn how to play and see all characteristics of all heroes',
-    chooseGame: 'Choose a game', gamePickerHint: 'Add more game catalogs as separate datasets.',
-    gameMlbb: 'Mobile Legends: Bang Bang', sectionsLabel: 'Site sections', sections: 'Sections',
+    chooseGame: 'Choose a game', gamePickerHint: 'The full MLBB database is available now; other games will be added one at a time.',
+    gameMlbb: 'Mobile Legends: Bang Bang', gameDota: 'Dota 2', gameGenshin: 'Genshin Impact',
+    gameZzz: 'Zenless Zone Zero', gameCatalogComingSoon: 'This game’s catalogue will be added later. The Mobile Legends: Bang Bang database is available now.',
+    legalNotice: 'All trademarks, logos, and character images belong to their respective owners. This site is a non-commercial reference resource created by fans for educational and informational purposes.',
+    sectionsLabel: 'Site sections', sections: 'Sections',
+    graphicsSettings: 'Graphics settings', deviceOptimization: 'DEVICE SETUP',
+    graphicsIntro: 'Choose your device and priority: image quality or smooth gameplay.',
+    deviceType: 'Device type', devicePhone: 'Phone / tablet', devicePc: 'PC',
+    deviceLaptop: 'Laptop', deviceXbox: 'Xbox', devicePlaystation: 'PlayStation',
+    playPriority: 'Priority', profileQuality: 'Maximum graphics',
+    profilePerformance: 'Smoothness and comfort', showDeviceSettings: 'Show recommendations',
+    showAllDeviceSettings: 'Show settings for all devices',
+    graphicsNotice: 'This site cannot measure your device performance. Choose maximum graphics only if the game stays stable, the device does not overheat, and FPS does not drop.',
+    graphicsCardTitle: 'Recommended settings', graphicsQualityLabel: 'Graphics quality',
+    graphicsFrameRateLabel: 'Frame rate', graphicsResolutionLabel: 'Resolution',
+    graphicsEffectsLabel: 'Effects', graphicsShadowsLabel: 'Shadows',
+    graphicsHigh: 'High — if your device can handle it', graphicsBalanced: 'Medium',
+    graphicsLow: 'Low', graphicsNativeResolution: 'Device native resolution',
+    graphicsReduceResolution: 'Reduce by one step if frames drop',
+    graphicsMaxStableFps: 'Highest stable option available in-game',
+    graphics60Fps: '60 FPS (or the closest available cap)',
+    graphicsRecommendedEffects: 'Enabled; lower if the device overheats',
+    graphicsReducedEffects: 'Reduced for stability',
+    graphicsEnabledShadows: 'Enabled if performance stays stable',
+    graphicsReducedShadows: 'Low or disabled',
+    graphicsPhoneTip: 'Close background apps, disable battery saver while playing, and leave room for the device to cool.',
+    graphicsPcTip: 'When playing on PC through an Android emulator, start with one instance, check stability, and match the resolution to your display.',
+    graphicsLaptopTip: 'Play while plugged in on a hard surface, select a performance power mode, and monitor temperatures.',
+    graphicsConsoleUnavailable: 'Mobile Legends: Bang Bang has no official version for this console. These settings cannot add game support.',
+    graphicsQualityDescription: 'Raise quality one setting at a time and check stability in a match; undo the last step if heat or frame drops appear.',
+    graphicsPerformanceDescription: 'Lower effects and shadows if FPS is unstable or the device gets hot. Prioritize smooth, comfortable play.',
+    graphicsAllDevicesLabel: 'Profile for all devices',
+    graphicsConsoleBadge: 'Not officially supported',
     characteristics: 'Characteristics', winningGuide: 'How to play and win',
     sidebarNote: 'Choose a section to get started.', gameDatabase: 'GAME DATABASE',
     characteristicsIntro: 'Compare heroes, combat stats, and suggested builds.',
@@ -179,11 +241,42 @@ const LANGUAGES = {
   uz: {
     language: 'Til', theme: 'Mavzu', themeDark: 'Qorong‘i', themeLight: 'Yorug‘', themeOcean: 'Okean',
     siteSettings: 'Sayt sozlamalari', filtersLabel: 'Qidirish va filtrlar', heroesLabel: 'Qahramonlar',
-    pageTitle: 'MLBB qahramonlari bazasi',
+    pageTitle: 'MLBB qahramonlari bazasi', databaseTitleSuffix: 'Qahramonlar bazasi',
     title: 'Mobile Legends: Bang Bang',
     subtitle: 'O‘yinlar arxiviga xush kelibsiz: bu yerda o‘ynashni o‘rganib, barcha qahramonlarning xususiyatlarini ko‘rishingiz mumkin.',
-    chooseGame: 'O‘yinni tanlang', gamePickerHint: 'Boshqa o‘yinlar katalogini alohida qo‘shish mumkin.',
-    gameMlbb: 'Mobile Legends: Bang Bang', sectionsLabel: 'Sayt bo‘limlari', sections: 'Bo‘limlar',
+    chooseGame: 'O‘yinni tanlang', gamePickerHint: 'MLBB bazasi hozir mavjud; boshqa o‘yinlarni navbatma-navbat qo‘shamiz.',
+    gameMlbb: 'Mobile Legends: Bang Bang', gameDota: 'Dota 2', gameGenshin: 'Genshin Impact',
+    gameZzz: 'Zenless Zone Zero', gameCatalogComingSoon: 'Bu o‘yin katalogi keyinroq qo‘shiladi. Hozir Mobile Legends: Bang Bang bazasi mavjud.',
+    legalNotice: 'Barcha savdo belgilari, logotiplar va qahramon tasvirlari ularning qonuniy egalariga tegishli. Ushbu sayt muxlislar tomonidan ta’lim va axborot maqsadlarida yaratilgan notijorat ma’lumotnoma resursidir.',
+    sectionsLabel: 'Sayt bo‘limlari', sections: 'Bo‘limlar',
+    graphicsSettings: 'Grafika sozlamalari', deviceOptimization: 'QURILMANI SOZLASH',
+    graphicsIntro: 'Qurilma va ustuvor yo‘nalishni tanlang: tasvir sifati yoki ravon o‘yin.',
+    deviceType: 'Qurilma turi', devicePhone: 'Telefon / planshet', devicePc: 'Kompyuter',
+    deviceLaptop: 'Noutbuk', deviceXbox: 'Xbox', devicePlaystation: 'PlayStation',
+    playPriority: 'Ustuvorlik', profileQuality: 'Maksimal grafika',
+    profilePerformance: 'Ravonlik va qulaylik', showDeviceSettings: 'Tavsiyalarni ko‘rsatish',
+    showAllDeviceSettings: 'Barcha qurilmalar uchun sozlamalar',
+    graphicsNotice: 'Sayt qurilmangiz quvvatini tekshira olmaydi. Maksimal grafikani faqat o‘yin barqaror ishlasa, qurilma qizib ketmasa va FPS pasaymasa tanlang.',
+    graphicsCardTitle: 'Tavsiya etilgan sozlamalar', graphicsQualityLabel: 'Grafika sifati',
+    graphicsFrameRateLabel: 'Kadrlar tezligi', graphicsResolutionLabel: 'Ekran aniqligi',
+    graphicsEffectsLabel: 'Effektlar', graphicsShadowsLabel: 'Soyalar',
+    graphicsHigh: 'Yuqori — qurilma ko‘tara olsa', graphicsBalanced: 'O‘rtacha',
+    graphicsLow: 'Past', graphicsNativeResolution: 'Qurilmaning asl ekran aniqligi',
+    graphicsReduceResolution: 'Kadrlar tushsa bir pog‘ona kamaytiring',
+    graphicsMaxStableFps: 'O‘yinda mavjud eng yuqori barqaror qiymat',
+    graphics60Fps: '60 FPS (yoki mavjud eng yaqin chegara)',
+    graphicsRecommendedEffects: 'Yoqilgan; qurilma qizisa pasaytiring',
+    graphicsReducedEffects: 'Barqarorlik uchun kamaytirilgan',
+    graphicsEnabledShadows: 'Barqaror ishlasa yoqilgan',
+    graphicsReducedShadows: 'Past yoki o‘chirilgan',
+    graphicsPhoneTip: 'Orqa fondagi ilovalarni yoping, o‘yin paytida quvvat tejashni o‘chiring va qurilma sovishi uchun joy qoldiring.',
+    graphicsPcTip: 'Kompyuterda Android emulyatori orqali o‘ynasangiz, bitta nusxadan boshlang, barqarorlikni tekshiring va ekran aniqligini moslang.',
+    graphicsLaptopTip: 'Noutbukni tokka ulang, qattiq yuzada o‘ynang, unumdorlik quvvat rejimini tanlang va haroratni kuzating.',
+    graphicsConsoleUnavailable: 'Mobile Legends: Bang Bang ushbu konsol uchun rasmiy versiyaga ega emas. Bu sozlamalar o‘yin qo‘llovini qo‘shmaydi.',
+    graphicsQualityDescription: 'Sifatni birma-bir oshirib, o‘yinda barqarorlikni tekshiring; qizish yoki kadrlar tushsa oxirgi o‘zgarishni bekor qiling.',
+    graphicsPerformanceDescription: 'FPS beqaror yoki qurilma qizisa effektlar va soyalarni pasaytiring. Ravon va qulay o‘yinni ustun qo‘ying.',
+    graphicsAllDevicesLabel: 'Barcha qurilmalar uchun profil',
+    graphicsConsoleBadge: 'Rasmiy qo‘llov mavjud emas',
     characteristics: 'Xususiyatlar', winningGuide: 'Qanday o‘ynash va g‘alaba qozonish',
     sidebarNote: 'Boshlash uchun bo‘limni tanlang.', gameDatabase: 'O‘YIN BAZASI',
     characteristicsIntro: 'Qahramonlar, jang xususiyatlari va tavsiya etilgan jihozlarni solishtiring.',
@@ -268,7 +361,17 @@ const LANGUAGES = {
 
 const FILTER_IDS = ['role-filter', 'difficulty-filter', 'type-filter', 'position-filter'];
 const GAME_CATALOG = [
-  { id: 'mlbb', nameKey: 'gameMlbb', dataUrl: './heroes.json', expectedHeroCount: 132 }
+  { id: 'mlbb', nameKey: 'gameMlbb', logo: 'MLBB', dataUrl: './heroes.json', expectedHeroCount: 132 },
+  { id: 'dota2', nameKey: 'gameDota', logo: 'DOTA 2' },
+  { id: 'genshin', nameKey: 'gameGenshin', logo: 'GI' },
+  { id: 'zzz', nameKey: 'gameZzz', logo: 'ZZZ' }
+];
+const GRAPHICS_DEVICES = [
+  { id: 'phone', nameKey: 'devicePhone', tipKey: 'graphicsPhoneTip' },
+  { id: 'pc', nameKey: 'devicePc', tipKey: 'graphicsPcTip' },
+  { id: 'laptop', nameKey: 'deviceLaptop', tipKey: 'graphicsLaptopTip' },
+  { id: 'xbox', nameKey: 'deviceXbox', unsupported: true },
+  { id: 'playstation', nameKey: 'devicePlaystation', unsupported: true }
 ];
 const DIFFICULTY_ORDER = { easy: 1, medium: 2, hard: 3 };
 const DAMAGE_TYPES = ['physical', 'magic', 'mixed'];
@@ -646,6 +749,7 @@ function applyLanguage() {
   document.getElementById('position-filter').options[0].textContent = text('anyLane');
   populateGameSelector();
   updateResults();
+  renderGraphicsSettings();
 }
 
 function populateGameSelector() {
@@ -658,6 +762,130 @@ function populateGameSelector() {
     return option;
   }));
   select.value = selectedGame;
+  const activeGame = GAME_CATALOG.find(game => game.id === selectedGame);
+  updateGameBranding(activeGame);
+  if (activeGame && !activeGame.dataUrl) showGameComingSoon();
+}
+
+function updateGameBranding(game) {
+  if (!game) return;
+  document.getElementById('game-logo').textContent = game.logo;
+  document.getElementById('game-logo').dataset.game = game.id;
+  document.querySelector('header h1').textContent = text(game.nameKey);
+  document.title = `${text(game.nameKey)} — ${text('databaseTitleSuffix')}`;
+}
+
+function showGameComingSoon() {
+  heroes = [];
+  document.getElementById('filter-panel').hidden = true;
+  document.querySelector('.section-sidebar').hidden = true;
+  document.querySelector('.workspace').classList.add('is-game-unavailable');
+  document.querySelectorAll('.content-view').forEach(view => {
+    view.hidden = view.id !== 'character-view';
+  });
+  document.getElementById('hero-container').innerHTML =
+    `<p class="empty-state">${escapeHtml(text('gameCatalogComingSoon'))}</p>`;
+}
+
+function renderGraphicsCard(device, profile, showAll = false) {
+  const deviceName = escapeHtml(text(device.nameKey));
+  const heading = showAll
+    ? `${escapeHtml(text('graphicsAllDevicesLabel'))}: ${deviceName}`
+    : escapeHtml(text('graphicsCardTitle'));
+  if (device.unsupported) {
+    return `
+      <article class="graphics-card graphics-card-unavailable">
+        <div class="graphics-card-heading">
+          <span class="graphics-device-badge">${deviceName}</span>
+          <h3>${heading}</h3>
+        </div>
+        <p class="graphics-console-note">${escapeHtml(text('graphicsConsoleUnavailable'))}</p>
+        <span class="graphics-console-badge">${escapeHtml(text('graphicsConsoleBadge'))}</span>
+      </article>`;
+  }
+
+  const isQuality = profile === 'quality';
+  const quality = isQuality ? 'graphicsHigh' : 'graphicsBalanced';
+  const frameRate = isQuality ? 'graphicsMaxStableFps' : 'graphics60Fps';
+  const resolution = isQuality ? 'graphicsNativeResolution' : 'graphicsReduceResolution';
+  const effects = isQuality ? 'graphicsRecommendedEffects' : 'graphicsReducedEffects';
+  const shadows = isQuality ? 'graphicsEnabledShadows' : 'graphicsReducedShadows';
+  const description = isQuality ? 'graphicsQualityDescription' : 'graphicsPerformanceDescription';
+  const settings = [
+    ['graphicsQualityLabel', quality],
+    ['graphicsFrameRateLabel', frameRate],
+    ['graphicsResolutionLabel', resolution],
+    ['graphicsEffectsLabel', effects],
+    ['graphicsShadowsLabel', shadows]
+  ];
+  const deviceTip = device.tipKey
+    ? `<p class="graphics-device-tip">${escapeHtml(text(device.tipKey))}</p>`
+    : '';
+  return `
+    <article class="graphics-card">
+      <div class="graphics-card-heading">
+        <span class="graphics-device-badge">${deviceName}</span>
+        <h3>${heading}</h3>
+      </div>
+      <dl class="graphics-spec-list">
+        ${settings.map(([labelKey, valueKey]) => `
+          <div class="graphics-spec">
+            <dt>${escapeHtml(text(labelKey))}</dt>
+            <dd>${escapeHtml(text(valueKey))}</dd>
+          </div>`).join('')}
+      </dl>
+      <p class="graphics-profile-description">${escapeHtml(text(description))}</p>
+      ${deviceTip}
+    </article>`;
+}
+
+function renderGraphicsSettings() {
+  const results = document.getElementById('graphics-results');
+  const deviceSelect = document.getElementById('device-filter');
+  const profileSelect = document.getElementById('graphics-profile');
+  if (!results || !deviceSelect || !profileSelect) return;
+  const device = GRAPHICS_DEVICES.find(item => item.id === deviceSelect.value) || GRAPHICS_DEVICES[0];
+  const profile = profileSelect.value === 'performance' ? 'performance' : 'quality';
+  const showAll = results.dataset.showAll === 'true';
+  results.innerHTML = showAll
+    ? GRAPHICS_DEVICES.map(item => renderGraphicsCard(item, profile, true)).join('')
+    : renderGraphicsCard(device, profile);
+}
+
+function setupGraphicsSettings() {
+  const deviceSelect = document.getElementById('device-filter');
+  const profileSelect = document.getElementById('graphics-profile');
+  const results = document.getElementById('graphics-results');
+  deviceSelect.value = readPreference(
+    'graphicsDevice',
+    GRAPHICS_DEVICES.map(device => device.id),
+    'phone'
+  );
+  profileSelect.value = readPreference('graphicsProfile', ['quality', 'performance'], 'performance');
+
+  const saveSelections = () => {
+    savePreference('graphicsDevice', deviceSelect.value);
+    savePreference('graphicsProfile', profileSelect.value);
+  };
+  document.getElementById('graphics-settings-form').addEventListener('submit', event => {
+    event.preventDefault();
+    saveSelections();
+    results.dataset.showAll = 'false';
+    renderGraphicsSettings();
+  });
+  document.getElementById('show-all-device-settings').addEventListener('click', () => {
+    saveSelections();
+    results.dataset.showAll = 'true';
+    renderGraphicsSettings();
+  });
+  [deviceSelect, profileSelect].forEach(select => {
+    select.addEventListener('change', () => {
+      saveSelections();
+      results.dataset.showAll = 'false';
+      renderGraphicsSettings();
+    });
+  });
+  renderGraphicsSettings();
 }
 
 function applyTheme() {
@@ -995,19 +1223,35 @@ function setupNavigation() {
 }
 
 async function loadHeroes() {
+  const requestedGameId = document.getElementById('game-select').value;
   try {
-    const selectedGame = GAME_CATALOG.find(game => game.id === document.getElementById('game-select').value);
+    const selectedGame = GAME_CATALOG.find(game => game.id === requestedGameId);
     if (!selectedGame) throw new Error('The selected game does not have a registered catalogue.');
+    updateGameBranding(selectedGame);
+    if (!selectedGame.dataUrl) {
+      showGameComingSoon();
+      return;
+    }
+    document.getElementById('filter-panel').hidden = false;
+    document.querySelector('.section-sidebar').hidden = false;
+    document.querySelector('.workspace').classList.remove('is-game-unavailable');
     const response = await fetch(selectedGame.dataUrl);
     if (!response.ok) throw new Error(`Hero data request failed with status ${response.status}`);
-    heroes = await response.json();
+    const loadedHeroes = await response.json();
+    if (document.getElementById('game-select').value !== requestedGameId) return;
+    heroes = loadedHeroes;
     if (heroes.length !== selectedGame.expectedHeroCount
       || new Set(heroes.map(hero => hero.name)).size !== selectedGame.expectedHeroCount) {
       throw new Error(`Expected ${selectedGame.expectedHeroCount} unique heroes, received ${heroes.length}`);
     }
+    const activeView = document.querySelector('.section-link.is-active').dataset.view;
+    document.querySelectorAll('.content-view').forEach(view => {
+      view.hidden = view.id !== activeView;
+    });
     populateFilters();
     applyLanguage();
   } catch (error) {
+    if (document.getElementById('game-select').value !== requestedGameId) return;
     console.error('The hero catalogue could not be loaded.', error);
     const container = document.getElementById('hero-container');
     container.innerHTML = `<p class="empty-state">${escapeHtml(text('catalogueError'))}</p>`;
@@ -1018,6 +1262,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setupSettings();
   setupFilters();
   setupNavigation();
+  setupGraphicsSettings();
   populateGameSelector();
   document.getElementById('game-select').addEventListener('change', loadHeroes);
   loadHeroes();
