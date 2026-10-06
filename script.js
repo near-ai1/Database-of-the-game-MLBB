@@ -3,7 +3,53 @@ const LANGUAGES = {
     language: 'Язык', theme: 'Тема', themeDark: 'Тёмная', themeLight: 'Светлая', themeOcean: 'Океан',
     siteSettings: 'Настройки сайта', filtersLabel: 'Поиск и фильтры', heroesLabel: 'Персонажи',
     pageTitle: 'База героев MLBB',
-    title: 'Mobile Legends: Bang Bang', subtitle: 'База персонажей, сборок и контрпиков',
+    title: 'Mobile Legends: Bang Bang',
+    subtitle: 'Добро пожаловать в архив игр: здесь можно учиться играть и смотреть характеристики всех героев.',
+    chooseGame: 'Выберите игру', gamePickerHint: 'Каталоги игр можно добавлять отдельно.',
+    gameMlbb: 'Mobile Legends: Bang Bang', sectionsLabel: 'Разделы сайта', sections: 'Разделы',
+    characteristics: 'Характеристики', winningGuide: 'Как играть и побеждать',
+    sidebarNote: 'Выберите раздел, чтобы начать.', gameDatabase: 'БАЗА ИГРЫ',
+    characteristicsIntro: 'Сравнивайте героев, боевые показатели и рекомендуемые сборки.',
+    victoryPlaybook: 'ПЛАН НА ПОБЕДУ',
+    guideIntro: 'Сосредоточьтесь на целях, командной игре и безопасном преимуществе.',
+    earlyGame: 'Начало игры',
+    earlyTipOne: 'Фармите свою линию и безопасно добивайте миньонов, чтобы быстрее получить золото и опыт.',
+    earlyTipTwo: 'Следите за мини-картой; отступайте, если враги пропали и могут готовить нападение.',
+    earlyTipThree: 'Помогайте команде у ближайшей цели, если линия в безопасности.',
+    midGame: 'Середина игры',
+    midTipOne: 'Двигайтесь с союзниками и проверяйте карту, прежде чем заходить в реку или вражескую область.',
+    midTipTwo: 'Превращайте выигранные схватки в башни, черепаху или пространство на карте.',
+    midTipThree: 'Покупайте защитные предметы против главной угрозы соперника.',
+    lateGame: 'Конец игры',
+    lateTipOne: 'Не рискуйте в одиночку: одна ошибка может отдать врагам лорда или базу.',
+    lateTipTwo: 'Собирайтесь перед появлением лорда и сохраняйте способности для решающей битвы.',
+    lateTipThree: 'После победы в командной битве вместе продвигайтесь к цели и заканчивайте игру.',
+    teamFight: 'Командные бои',
+    teamTipOne: 'Перед началом проверьте позиции союзников и не начинайте бой в меньшинстве.',
+    teamTipTwo: 'Герои передней линии создают пространство; хрупкие герои держатся позади и бьют безопасно.',
+    teamTipThree: 'Выбирайте достижимую цель и помогайте команде контролем и уроном.',
+    laneGuide: 'Линии и роли MLBB',
+    laneTipOne: 'Золотая линия: безопасно фармите и собирайте предметы; стрелку важно пережить начало игры.',
+    laneTipTwo: 'Центр: магу следует быстро очистить волну, а затем помочь на реке или соседней линии.',
+    laneTipThree: 'Линия опыта: бойцу нужно удерживать линию и быть готовым к схваткам за черепаху.',
+    laneTipFour: 'Лес: возьмите «Воздаяние», чередуйте лагеря с линиями и согласуйте выходы на черепаху и лорда.',
+    laneTipFive: 'Роум: помогайте союзникам и проверяйте кусты вместе с командой; не забирайте их безопасный фарм.',
+    objectiveGuide: 'Цели и перемещения',
+    objectiveTipOne: 'После успешного ганка или победы в бою сразу решите, что можно забрать: башню, черепаху, лорда или вражеский лес.',
+    objectiveTipTwo: 'Черепаха даёт команде преимущество в начале; собирайтесь заранее и помогайте леснику контролировать подходы.',
+    objectiveTipThree: 'Лорд помогает продвинуть линии. Убедитесь, что союзники готовы сопровождать его, прежде чем начинать.',
+    objectiveTipFour: 'Башни открывают карту и безопасные маршруты; не преследуйте врагов, забывая о свободной цели.',
+    itemGuide: 'Сборка и контрпредметы',
+    itemTipOne: 'Начинайте с рекомендуемой сборки, но меняйте порядок и предметы по ситуации в матче.',
+    itemTipTwo: 'Против сильного лечения рассмотрите сокращение восстановления; против магического взрывного урона — магическую защиту.',
+    itemTipThree: 'Против физического урона подберите броню, а против критических атак — подходящую защиту от критов.',
+    itemTipFour: 'Следите за вражескими предметами и покупайте защиту до решающего боя, а не после него.',
+    practiceGuide: 'Изучение героя',
+    practiceTipOne: 'Прочитайте умения и пассивный эффект; проверьте дальность атаки, стоимость ресурсов и время перезарядки.',
+    practiceTipTwo: 'Потренируйте базовую комбинацию в тренировке и узнайте, какое умение нужно сохранить для отхода.',
+    practiceTipThree: 'Выберите линию, рекомендуемую для героя, и используйте характеристики, сложность, сборку и контрпики в первом разделе.',
+    practiceTipFour: 'После матча оцените позиционирование, карту и потраченные умения, а не только итоговый счёт.',
+    guideDisclaimer: 'Советы общие: адаптируйте их к составам команд и обновлениям игры.',
     search: 'Поиск',
     searchPlaceholder: 'Имя, роль, линия, предмет...', role: 'Роль', difficulty: 'Сложность',
     damageType: 'Тип урона', lane: 'Линия', sort: 'Сортировка', sortDefault: 'По умолчанию',
@@ -46,7 +92,53 @@ const LANGUAGES = {
     language: 'Language', theme: 'Theme', themeDark: 'Dark', themeLight: 'Light', themeOcean: 'Ocean',
     siteSettings: 'Site settings', filtersLabel: 'Search and filters', heroesLabel: 'Heroes',
     pageTitle: 'MLBB Hero Database',
-    title: 'Mobile Legends: Bang Bang', subtitle: 'Hero database, builds, and counters',
+    title: 'Mobile Legends: Bang Bang',
+    subtitle: 'Welcome to archive of games where you can learn how to play and see all characteristics of all heroes',
+    chooseGame: 'Choose a game', gamePickerHint: 'Add more game catalogs as separate datasets.',
+    gameMlbb: 'Mobile Legends: Bang Bang', sectionsLabel: 'Site sections', sections: 'Sections',
+    characteristics: 'Characteristics', winningGuide: 'How to play and win',
+    sidebarNote: 'Choose a section to get started.', gameDatabase: 'GAME DATABASE',
+    characteristicsIntro: 'Compare heroes, combat stats, and suggested builds.',
+    victoryPlaybook: 'VICTORY PLAYBOOK',
+    guideIntro: 'Focus on objectives, teamwork, and building a safe advantage.',
+    earlyGame: 'Early game',
+    earlyTipOne: 'Farm your lane and secure minion last hits safely to build gold and experience.',
+    earlyTipTwo: 'Watch the minimap; retreat when enemies disappear and may be preparing a gank.',
+    earlyTipThree: 'Help your team contest a nearby objective when your lane is safe.',
+    midGame: 'Mid game',
+    midTipOne: 'Move with allies and check the map before entering the river or enemy territory.',
+    midTipTwo: 'Turn won skirmishes into turrets, Turtle, or control of map space.',
+    midTipThree: 'Buy defensive items that answer the opposing team’s main threat.',
+    lateGame: 'Late game',
+    lateTipOne: 'Avoid risky solo plays: one mistake can give the enemy Lord or your base.',
+    lateTipTwo: 'Group before Lord spawns and save key abilities for the decisive fight.',
+    lateTipThree: 'After winning a team fight, push together and convert it into an objective or game finish.',
+    teamFight: 'Team fights',
+    teamTipOne: 'Check ally positions before engaging; avoid starting a fight while outnumbered.',
+    teamTipTwo: 'Frontliners create space; fragile heroes stay behind them and deal damage safely.',
+    teamTipThree: 'Choose a reachable target and support your team with control and damage.',
+    laneGuide: 'MLBB lanes and roles',
+    laneTipOne: 'Gold lane: farm safely and build items; marksmen need to survive the early game.',
+    laneTipTwo: 'Mid lane: mages should clear the wave quickly, then help around the river or a nearby lane.',
+    laneTipThree: 'EXP lane: fighters should hold their lane and be ready to contest Turtle skirmishes.',
+    laneTipFour: 'Jungle: equip Retribution, balance camps with lane pressure, and coordinate Turtle and Lord attempts.',
+    laneTipFive: 'Roam: help allies and check bushes with your team; avoid taking their safe farm.',
+    objectiveGuide: 'Objectives and rotations',
+    objectiveTipOne: 'After a successful gank or fight, decide what you can take next: a turret, Turtle, Lord, or enemy jungle.',
+    objectiveTipTwo: 'Turtle gives your team an early advantage; group beforehand and help your jungler control approaches.',
+    objectiveTipThree: 'Lord helps push lanes. Make sure your allies can follow up before starting it.',
+    objectiveTipFour: 'Turrets open the map and safer routes; do not chase enemies while a free objective is available.',
+    itemGuide: 'Builds and counter items',
+    itemTipOne: 'Start from the suggested build, but adapt item order and choices to the match.',
+    itemTipTwo: 'Against strong healing, consider anti-heal; against magic burst, add magic defense.',
+    itemTipThree: 'Build armor against physical damage and suitable critical-damage defense against crit-focused enemies.',
+    itemTipFour: 'Track enemy items and buy defensive answers before the decisive fight, not after it.',
+    practiceGuide: 'Learning a hero',
+    practiceTipOne: 'Read each skill and passive; check attack range, resource costs, and cooldowns.',
+    practiceTipTwo: 'Practice a basic combo in training and identify which skill you should save to escape.',
+    practiceTipThree: 'Choose a lane suited to the hero and use the first section for stats, difficulty, builds, and counters.',
+    practiceTipFour: 'After a match, review positioning, map awareness, and ability use—not only the final score.',
+    guideDisclaimer: 'These are general tips; adapt them to team compositions and game updates.',
     search: 'Search',
     searchPlaceholder: 'Name, role, lane, item...', role: 'Role', difficulty: 'Difficulty',
     damageType: 'Damage type', lane: 'Lane', sort: 'Sort', sortDefault: 'Default',
@@ -88,7 +180,53 @@ const LANGUAGES = {
     language: 'Til', theme: 'Mavzu', themeDark: 'Qorong‘i', themeLight: 'Yorug‘', themeOcean: 'Okean',
     siteSettings: 'Sayt sozlamalari', filtersLabel: 'Qidirish va filtrlar', heroesLabel: 'Qahramonlar',
     pageTitle: 'MLBB qahramonlari bazasi',
-    title: 'Mobile Legends: Bang Bang', subtitle: 'Qahramonlar, jihozlar va qarshi qahramonlar bazasi',
+    title: 'Mobile Legends: Bang Bang',
+    subtitle: 'O‘yinlar arxiviga xush kelibsiz: bu yerda o‘ynashni o‘rganib, barcha qahramonlarning xususiyatlarini ko‘rishingiz mumkin.',
+    chooseGame: 'O‘yinni tanlang', gamePickerHint: 'Boshqa o‘yinlar katalogini alohida qo‘shish mumkin.',
+    gameMlbb: 'Mobile Legends: Bang Bang', sectionsLabel: 'Sayt bo‘limlari', sections: 'Bo‘limlar',
+    characteristics: 'Xususiyatlar', winningGuide: 'Qanday o‘ynash va g‘alaba qozonish',
+    sidebarNote: 'Boshlash uchun bo‘limni tanlang.', gameDatabase: 'O‘YIN BAZASI',
+    characteristicsIntro: 'Qahramonlar, jang xususiyatlari va tavsiya etilgan jihozlarni solishtiring.',
+    victoryPlaybook: 'G‘ALABA REJASI',
+    guideIntro: 'Maqsadlar, jamoaviy o‘yin va xavfsiz ustunlikka e’tibor qarating.',
+    earlyGame: 'O‘yin boshi',
+    earlyTipOne: 'Oltin va tajriba yig‘ish uchun yo‘lakda xavfsiz farm qiling va minionlarni oxirgi zarba bilan oling.',
+    earlyTipTwo: 'Xarita mini-ko‘rinishini kuzating; dushmanlar yo‘qolsa va hujum qilishi mumkin bo‘lsa, chekining.',
+    earlyTipThree: 'Yo‘lak xavfsiz bo‘lsa, yaqin maqsad uchun jamoaga yordam bering.',
+    midGame: 'O‘yin o‘rtasi',
+    midTipOne: 'Ittifoqchilar bilan harakatlaning; daryo yoki dushman hududiga kirishdan oldin xaritani tekshiring.',
+    midTipTwo: 'Yutilgan janglarni minoralar, Toshbaqa yoki xaritada ustunlikka aylantiring.',
+    midTipThree: 'Raqib jamoaning asosiy xavfiga qarshi himoya buyumlarini oling.',
+    lateGame: 'O‘yin oxiri',
+    lateTipOne: 'Yolg‘iz xavfli harakat qilmang: bitta xato dushmanga Lord yoki bazani berishi mumkin.',
+    lateTipTwo: 'Lord chiqishidan oldin jamlaning va hal qiluvchi jang uchun muhim qobiliyatlarni saqlang.',
+    lateTipThree: 'Jamoaviy jangda g‘alaba qozongach, birga oldinga boring va o‘yinni yakunlang.',
+    teamFight: 'Jamoaviy janglar',
+    teamTipOne: 'Jangni boshlashdan oldin ittifoqchilar joylashuvini tekshiring; son jihatdan kam bo‘lsangiz hujum qilmang.',
+    teamTipTwo: 'Oldingi safdagi qahramonlar joy ochadi; himoyasiz qahramonlar orqada turib xavfsiz hujum qiladi.',
+    teamTipThree: 'Yetib borish mumkin bo‘lgan nishonni tanlang va nazorat hamda zarar bilan jamoaga yordam bering.',
+    laneGuide: 'MLBB yo‘laklari va rollari',
+    laneTipOne: 'Oltin yo‘lagi: xavfsiz farm qiling va buyum yig‘ing; mergan o‘yin boshida omon qolishi muhim.',
+    laneTipTwo: 'O‘rta yo‘lak: sehrgar to‘lqinni tez tozalab, daryo yoki yaqin yo‘lakka yordam berishi kerak.',
+    laneTipThree: 'Tajriba yo‘lagi: jangchi yo‘lakni ushlab, Toshbaqa uchun jangga tayyor tursin.',
+    laneTipFour: 'Jungli: Retribution oling, lagerlarni yo‘laklarga yordam bilan muvozanatlang va Toshbaqa hamda Lordni jamoa bilan rejalang.',
+    laneTipFive: 'Roum: ittifoqchilarga yordam bering va butalarni jamoa bilan tekshiring; ularning xavfsiz farmiga xalaqit bermang.',
+    objectiveGuide: 'Maqsadlar va xarita bo‘ylab harakat',
+    objectiveTipOne: 'Gank yoki jangda g‘alabadan keyin keyingi maqsadni tanlang: minora, Toshbaqa, Lord yoki dushman junglisi.',
+    objectiveTipTwo: 'Toshbaqa o‘yin boshida jamoaga ustunlik beradi; oldindan jamlanib, junglerga yo‘llarni nazorat qilishda yordam bering.',
+    objectiveTipThree: 'Lord yo‘laklarni surishga yordam beradi. Uni boshlashdan oldin ittifoqchilar tayyorligini tekshiring.',
+    objectiveTipFour: 'Minoralar xaritani va xavfsiz yo‘llarni ochadi; bo‘sh maqsad turganda dushmanni quvmang.',
+    itemGuide: 'Jihozlar va qarshi buyumlar',
+    itemTipOne: 'Tavsiya etilgan yig‘imdan boshlang, ammo buyumlar tartibi va tanlovini o‘yinga qarab o‘zgartiring.',
+    itemTipTwo: 'Kuchli davolanishga qarshi davolanishni kamaytiruvchi, sehrli portlovchi zararga qarshi sehrli himoya oling.',
+    itemTipThree: 'Jismoniy zararga qarshi sovut, kritik hujumlarga qarshi esa mos kritik himoyasini tanlang.',
+    itemTipFour: 'Dushman buyumlarini kuzating va hal qiluvchi jangdan oldin himoya buyumlarini oling.',
+    practiceGuide: 'Qahramonni o‘rganish',
+    practiceTipOne: 'Qobiliyatlar va passivni o‘qing; hujum masofasi, resurs narxi va sovish vaqtini tekshiring.',
+    practiceTipTwo: 'Mashq rejimida asosiy kombinatsiyani sinang va chekinish uchun qaysi qobiliyatni saqlashni aniqlang.',
+    practiceTipThree: 'Qahramonga mos yo‘lakni tanlang; birinchi bo‘limda xususiyatlar, qiyinlik, jihozlar va qarshi qahramonlarni ko‘ring.',
+    practiceTipFour: 'O‘yindan keyin faqat hisobni emas, joylashuv, xarita kuzatuvi va qobiliyat ishlatishni ham tahlil qiling.',
+    guideDisclaimer: 'Bu umumiy maslahatlar; ularni jamoa tarkibi va o‘yin yangilanishlariga moslang.',
     search: 'Qidirish',
     searchPlaceholder: 'Ism, rol, yo‘lak, buyum...', role: 'Rol', difficulty: 'Qiyinlik',
     damageType: 'Zarar turi', lane: 'Yo‘lak', sort: 'Saralash', sortDefault: 'Standart',
@@ -129,6 +267,9 @@ const LANGUAGES = {
 };
 
 const FILTER_IDS = ['role-filter', 'difficulty-filter', 'type-filter', 'position-filter'];
+const GAME_CATALOG = [
+  { id: 'mlbb', nameKey: 'gameMlbb', dataUrl: './heroes.json', expectedHeroCount: 132 }
+];
 const DIFFICULTY_ORDER = { easy: 1, medium: 2, hard: 3 };
 const DAMAGE_TYPES = ['physical', 'magic', 'mixed'];
 const DIFFICULTIES = ['easy', 'medium', 'hard'];
@@ -503,7 +644,20 @@ function applyLanguage() {
   document.getElementById('difficulty-filter').options[0].textContent = text('any');
   document.getElementById('type-filter').options[0].textContent = text('anyType');
   document.getElementById('position-filter').options[0].textContent = text('anyLane');
+  populateGameSelector();
   updateResults();
+}
+
+function populateGameSelector() {
+  const select = document.getElementById('game-select');
+  const selectedGame = select.value || GAME_CATALOG[0].id;
+  select.replaceChildren(...GAME_CATALOG.map(game => {
+    const option = document.createElement('option');
+    option.value = game.id;
+    option.textContent = text(game.nameKey);
+    return option;
+  }));
+  select.value = selectedGame;
 }
 
 function applyTheme() {
@@ -823,13 +977,33 @@ function setupFilters() {
   });
 }
 
+function setupNavigation() {
+  document.querySelectorAll('.section-link').forEach(button => {
+    button.addEventListener('click', () => {
+      const targetId = button.dataset.view;
+      document.querySelectorAll('.section-link').forEach(link => {
+        const active = link === button;
+        link.classList.toggle('is-active', active);
+        link.setAttribute('aria-pressed', String(active));
+      });
+      document.querySelectorAll('.content-view').forEach(view => {
+        view.hidden = view.id !== targetId;
+      });
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+}
+
 async function loadHeroes() {
   try {
-    const response = await fetch('./heroes.json');
+    const selectedGame = GAME_CATALOG.find(game => game.id === document.getElementById('game-select').value);
+    if (!selectedGame) throw new Error('The selected game does not have a registered catalogue.');
+    const response = await fetch(selectedGame.dataUrl);
     if (!response.ok) throw new Error(`Hero data request failed with status ${response.status}`);
     heroes = await response.json();
-    if (heroes.length !== 132 || new Set(heroes.map(hero => hero.name)).size !== 132) {
-      throw new Error(`Expected 132 unique heroes, received ${heroes.length}`);
+    if (heroes.length !== selectedGame.expectedHeroCount
+      || new Set(heroes.map(hero => hero.name)).size !== selectedGame.expectedHeroCount) {
+      throw new Error(`Expected ${selectedGame.expectedHeroCount} unique heroes, received ${heroes.length}`);
     }
     populateFilters();
     applyLanguage();
@@ -843,5 +1017,8 @@ async function loadHeroes() {
 document.addEventListener('DOMContentLoaded', () => {
   setupSettings();
   setupFilters();
+  setupNavigation();
+  populateGameSelector();
+  document.getElementById('game-select').addEventListener('change', loadHeroes);
   loadHeroes();
 });
